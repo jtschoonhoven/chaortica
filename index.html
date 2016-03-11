@@ -3,13 +3,100 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Chaortica</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <style>
+            /* http://stackoverflow.com/a/22196760/3076390 */
+            html, body {
+              height: 100%;
+              background-color: gold;
+            }
+
+            .mc-field-group {
+                margin-bottom: 2px;
+            }
+
+            p.lead {
+                font-size: 1.8em;
+            }
+
+            .jumbotron.vertical-center {
+              margin-bottom: 0;
+              background-color: gold;
+            }
+
+            .vertical-center {
+              min-height: 100%;
+              min-height: 100vh;
+
+              /* Make it a flex container */
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex; 
+              
+              /* Align the bootstrap's container vertically */
+                -webkit-box-align : center;
+              -webkit-align-items : center;
+                   -moz-box-align : center;
+                   -ms-flex-align : center;
+                      align-items : center;
+              
+              /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
+              width: 100%;
+              
+              /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+                 hence the bootstrap's container won't be aligned to the center anymore.
+                 Therefore, we should use the following declarations to get it centered again */
+                     -webkit-box-pack : center;
+                        -moz-box-pack : center;
+                        -ms-flex-pack : center;
+              -webkit-justify-content : center;
+                      justify-content : center;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <div class="jumbotron vertical-center text-center">
+                <div class="text-center">
+                    <h1>Chaortica</h1>
+                    <p class="lead">Coagulate together.</p>
+                    <div class="row">
 
-        <p>Chaos!!</p>
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup" class="container" style="width: 300px">
+                            <form action="//choartica.us13.list-manage.com/subscribe/post?u=aa637f9c2b7abe9f39f2580e8&amp;id=6bab327731" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                
+                                    <div class="mc-field-group form-group">
+                                        <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="you@domain.com">
+                                    </div>
+                                    <div class="clear form-group" style="margin-top: 0">
+                                        <input type="submit" style="width: 100%" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_aa637f9c2b7abe9f39f2580e8_6bab327731" tabindex="-1" value="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                        <!--End mc_embed_signup-->
 
+                        <p class="small">Chaortica is a new community in the heart of San Francisco. We're just getting started. Subscribe above and we'll let you know what we're up to from time to time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
