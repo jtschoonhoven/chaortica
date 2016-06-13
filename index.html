@@ -39,56 +39,25 @@
                 font-size: 1.8rem;
             }
 
-            .jumbotron.vertical-center {
+            .jumbotron {
               margin-bottom: 0;
               background-color: #F9F9F9;
-            }
-
-            .vertical-center {
-              min-height: 100%;
-              min-height: 100vh;
-
-              /* Make it a flex container */
-              display: -webkit-box;
-              display: -moz-box;
-              display: -ms-flexbox;
-              display: -webkit-flex;
-              display: flex; 
-              
-              /* Align the bootstrap's container vertically */
-                -webkit-box-align : center;
-              -webkit-align-items : center;
-                   -moz-box-align : center;
-                   -ms-flex-align : center;
-                      align-items : center;
-              
-              /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
-              width: 100%;
-              
-              /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
-                 hence the bootstrap's container won't be aligned to the center anymore.
-                 Therefore, we should use the following declarations to get it centered again */
-                     -webkit-box-pack : center;
-                        -moz-box-pack : center;
-                        -ms-flex-pack : center;
-              -webkit-justify-content : center;
-                      justify-content : center;
             }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="jumbotron vertical-center text-center">
+            <div class="jumbotron text-center">
                 <div class="text-center">
                     <h1>Chaortica</h1>
                     <p class="lead">Coagulate together.</p>
                     <hr>
                     <div class="row">
 
-                        <p class="small text-muted">
-                            <a style="width: 100%" class="typeform-share" href="https://chaortica.typeform.com/to/YBr18i" data-mode="2" target="_blank">Apply to live here</a>
+                        <p class="small text-muted col-xs-12">
+                            <a class="typeform-share" href="https://chaortica.typeform.com/to/YBr18i" data-mode="2" target="_blank">Apply to live here</a>
                             &bull;
-                            <a style="width: 100%" class="typeform-share" href="https://chaortica.typeform.com/to/ZqMsFu" data-mode="2" target="_blank">Send us an email</a>
+                            <a class="typeform-share" href="https://chaortica.typeform.com/to/ZqMsFu" data-mode="2" target="_blank">Send us an email</a>
                         </p>
 
                         <img src="http://i.imgur.com/YvRMyJA.jpg" class="img-responsive center-block img-thumbnail" />
@@ -107,7 +76,7 @@
                                 <div id="mc_embed_signup_scroll">
                                     <!-- Subscribe -->
                                     <div class="mc-field-group form-group">
-                                        <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="you@domain.com">
+                                        <input type="email" value="" name="EMAIL" class="form-control text-center" id="mce-EMAIL" placeholder="you@domain.com">
                                     </div>
                                     <div class="clear form-group" style="margin-top: 0">
                                         <input type="submit" style="width: 100%" value="Subscribe to our email list" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
@@ -122,6 +91,10 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+
+                        <div>
+                          
                         </div>
 
                         <hr>
